@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    Cache-Control: no-cache
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    cache-control: no-store
+</head>
+
+<body>
+    
+        
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+        <title>HELLO THERE </title>
+    <p id= "message"> </p>
+    <p id= "message1"> </p>
+    <p id= "message2"> </p>
+    <p id= "message3"> </p>
+    <script>
+        function square (arg)   {
+            return arg * arg
+                                }
+        function add (argOne, argTwo =10)   {
+            return argOne + argTwo
+                                            }
+
+                                            
+        function squareAdd (arg)   {
+            let result = square(arg)
+            return result + add (arg)
+                                           }
+    document.getElementById('message').innerText= ('8x8:' + square (8))
+    document.getElementById('message1').innerText= ('8+20:' + add (8,20))
+    document.getElementById('message2').innerText= ('8+10:' + add (8))
+    document.getElementById('message3').innerText= ('(8x8) + (8+10):' + squareAdd(8))
+    /*document.getElementById('message').innerText=
+                                                'hello World' */
+    </script>
+    
+</body>
+</html>
